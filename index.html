@@ -54,6 +54,10 @@ section{
     max-width:1200px;
     margin:auto;
 }
+.HeaderContainer
+{
+color:black;
+}
 
 .products{
     display:grid;
@@ -103,11 +107,28 @@ footer{
     text-align:center;
     padding:15px;
 }
+.vision-mission {
+    display: flex;
+    justify-content: space-around; /* space between Vision and Mission */
+    align-items: flex-start;       /* align text at the top */
+    gap: 40px;                     /* spacing between them */
+}
+
+.vision, .mission {
+    flex: 1;                       /* equal width */
+    max-width: 500px;              /* optional: limit width */
+}
 
 @media(max-width:768px){
     nav a{
         display:block;
         margin:10px 0;
+    }
+}
+@media(max-width:768px){
+    .vision-mission {
+        flex-direction: column;
+        text-align: center;
     }
 }
 </style>
@@ -116,7 +137,7 @@ footer{
 <body>
 
 <header>
-    <h1>SOINPEAU Pharmaceuticals</h1>
+    <h1> SOINPEAU Pharmaceuticals <sup><img src="logo.png" height="30" width="30"/></sup></h1>
     <nav>
         <a href="#home">Home</a>
         <a href="#products">Products</a>
@@ -124,8 +145,16 @@ footer{
     </nav>
 </header>
 
+
 <section class="hero" id="home">
-    <p>Providing quality products and services for our customers.</p>
+    <div class="vision-mission">
+        <div class="vision">
+            <p><b>Vision : </b> To create science-driven pharmaceutical solutions that address evolving market needs and set new standards in patient care.</p>
+        </div>
+        <div class="mission">
+            <p><b>Mission : </b> At SOINPEAU, we are dedicated to creating trusted pharmaceutical solutions that improve lives. Through innovation, quality and customer focus. We aim to meet the dynamic needs of healthcare market.</p>
+        </div>
+    </div>
 </section>
 
 <section id="products">
@@ -134,41 +163,174 @@ footer{
 
         <div class="products">
 
+            
+
+            
             <div class="product-card">
-                <img src="TansoinUltra.png" alt="Product 1">
-                <h3>Tansoin Ultra</h3>
-                <p>Tranexamic + Glutathione + Kojic Acid + SPF 40</p>
-            </div>
+                <img src="LevoCMSyrup.png" alt="Product 3">
+                <h3>Levo-CM Syrup</h3>
+                <p><b>Composition:</b>Montelukast Sodium 4mg + Levocetirizine HCL 2.5mg<br>
+<b>Benefits:</b>Controls allergy & prevents airway inflammation
+<br>24-hour relief from allergy & asthma
+
+</p>           </div>
+            <div class="product-card">
+                <img src="SoinD3Drops.png" alt="Product 3">
+                <h3>Soin-D3 Drops</h3>
+                <p><b>Composition:</b>Vitamin D3 800 IU<br>
+<b>Benefits:</b>Supports calcium absorption
+<br>Promotes bone mineralization
+<br><b>Nano Advantage:</b> Enhanced bioavailability, rapid absorption, precise dosage
+
+
+</p>           </div>
+<div class="product-card">
+                <img src="SoinColdNS.png" alt="Product 3">
+                <h3>Soincold-NS</h3>
+                <p><b>Composition:</b>Sodium Chloride 0.65%<br>
+<b>Benefits:</b>Clears nasal congestion, moisturizes passages, removes allergens
+
+</p>           </div>
 
             <div class="product-card">
+                <img src="SoinPep.png" alt="Product 3">
+                <h3>SoinPep</h3>
+                <p><b>Composition:</b>Alpha Amylase + Papain + Carminative oils<br>
+<b>Benefits:</b>Supports carbohydrate & protein digestion
+<br>Relieves indigestion, bloating, colic
+
+</p>           </div>
+            <div class="product-card">
+                <img src="SoinPepSyrup.png" alt="Product 3">
+                <h3>SoinPep Syrup</h3>
+                <p><b>Composition:</b>Alpha Amylase + Papain <br>
+<b>Benefits:</b>Supports carbohydrate & protein digestion
+<br>Promotes healthy appetite
+
+</p>           </div>
+<div class="product-card">
                 <img src="SoinRash.png" alt="Product 2">
                 <h3>Soin Rash</h3>
-                <p>Short description of Product 2.</p>
+                <p>
+<b>Composition:</b> Zinc Oxide + Benzalkonium Chloride<br>
+<b>Benefits:</b> Heals rashes, relieves itching, antiseptic protection
+</p>
             </div>
 
-            <div class="product-card">
-                <img src="SoinpeauGlo.png" alt="Product 3">
-                <h3>Soinpeau Glo</h3>
-                <p>Short description of Product 3.</p>
-            </div>
+            
 	    <div class="product-card">
                 <img src="SoinCold.png" alt="Product 1">
-                <h3>SoinCold</h3>
-                <p>Short description of Product 1.</p>
+                <h3>Soin Cold</h3>
+                <p><b>Composition:</b>Paracetamol + Phenylephrine + Chlorpheniramine<br>
+<b>Benefits:</b>Effective relief from upper respiratory allergy symptoms</p>
+            </div>
+
+
+	    <div class="product-card">
+                <img src="SoinColdAF.png" alt="Product 1">
+                <h3>Soin Cold-AF</h3>
+                <p><b>Composition:</b>Phenylephrine + Chlorpheniramine<br>
+<b>Benefits:</b>Reduces nasal congestion, sneezing, sinus pressure
+</p>
             </div>
 
             <div class="product-card">
                 <img src="Earsoin.png" alt="Product 2">
                 <h3>Earsoin</h3>
-                <p>Short description of Product 2.</p>
+                <p><b>Composition:</b>Benzocaine + Chlorbutol + Turpentine Oil<br>
+<b>Benefits:</b>Dissolves wax, relieves discomfort</p>
             </div>
 
             <div class="product-card">
-                <img src="SoinPep.png" alt="Product 3">
-                <h3>SoinPep</h3>
-                <p>Short description of Product 3.</p>
+                <img src="EarsoinAB.png" alt="Product 2">
+                <h3>Earsoin AB</h3>
+                <p><b>Composition:</b>Ofloxacin + Clotrimazole + Lignocaine<br>
+<b>Benefits:</b>Triple action: antibacterial, antifungal, pain relief
+</p>
             </div>
 
+<div class="product-card">
+                <img src="LevoC.png" alt="Product 3">
+                <h3>Levo-C</h3>
+                <p><b>Composition:</b>Levocetirizine 5mg<br>
+<b>Benefits:</b>The powerful manager in conventional allergies
+
+</p>           </div>
+<div class="product-card">
+                <img src="LevoCM.png" alt="Product 3">
+                <h3>Levo-CM</h3>
+                <p><b>Composition:</b>Montelukast + Levocetirizine<br>
+<b>Benefits:</b>Inhibits broncho constriction and corrects patho-physiology of asthma
+
+</p>           </div>
+<div class="product-card">
+                <img src="TansoinUltra.png" alt="Product 1">
+                <h3>Tansoin Ultra</h3>
+                <p><b>Composition:</b>Tranexamic + Glutathione + Kojic Acid + SPF 40<br>
+<b>Benefits:</b>Reduces melasma area and severity index and prevents hyperpigmentation</p>
+            </div>
+<div class="product-card">
+                <img src="SoinpeauGlo.png" alt="Product 3">
+                <h3>Soinpeau Glo</h3>
+                <p><b>Composition:</b>Kojic Acid + Glutathione + Glycolic Acid for radiance<br>
+<b>Benefits:</b>Powerful antioxidant, reduces dark spots and improves texture </p>
+            </div>
+
+<div class="product-card">
+                <img src="SoinpeauEXFO.png" alt="Product 3">
+                <h3>Soinpeau EXFO</h3>
+                <p><b>Composition:</b>Salicylic Acid, Triclosan and Tea Tree Oil for exfoliation<br>
+<b>Benefits:</b>Exfoliates dead skin cells and unclogs pores </p>
+            </div>
+<div class="product-card">
+                <img src="SoinpeauZIT.png" alt="Product 3">
+                <h3>Soinpeau ZIT</h3>
+                <p><b>Composition:</b>Zinc PCA + Manuca Oil for acne<br>
+<b>Benefits:</b>Safe and effective in acne management </p>
+            </div>
+<div class="product-card">
+                <img src="Tansoin500.png" alt="Product 3">
+                <h3>Tansoin-500</h3>
+                <p><b>Composition:</b>Tranexamic acid 500mg <br>
+<b>Benefits:</b>Safe and effective treatment in melasma</p>
+            </div>
+
+<div class="product-card">
+                <img src="SoinpeauKZ.png" alt="Product 3">
+                <h3>Soinpeau KZ</h3>
+                <p><b>Composition:</b>Ketoconazole 2%<br>
+<b>Benefits:</b>Effective in addressing all tinea infestations</p>
+            </div>
+
+
+<div class="product-card">
+                <img src="Lulisoin.png" alt="Product 3">
+                <h3>Lulisoin-Pro</h3>
+                <p><b>Composition:</b>Luliconazole + Pramoxine<br>
+<b>Benefits:</b>Fast relief from itching and fungal infection</p>
+            </div>
+
+<div class="product-card">
+                <img src="ManeMarvel.png" alt="Product 3">
+                <h3>Mane Marvel</h3>
+                <p><b>Composition:</b>Biotin, Niacinamide, Zinc, Amino Acids<br>
+<b>Benefits:</b>Strengthens roots, promotes growth, improves thickness, antioxidant protection</p>
+            </div>
+
+<div class="product-card">
+                <img src="PeausorTOFA.png" alt="Product 3">
+                <h3>Peausor-Tofa</h3>
+                <p><b>Composition:</b>Tofacitinib 5mg<br>
+<b>Benefits:</b>For vitiligo, atopic dermatitis, psoriasis</p>
+            </div>
+
+<div class="product-card">
+                <img src="PeausorMXT.png" alt="Product 3">
+                <h3>Peausor-MXT</h3>
+                <p><b>Composition:</b>Methotrexate 2.5mg/5mg tablets<br>
+<b>Benefits:</b>For psoriasis & autoimmune disorders</p>
+            </div>
+</div>
         </div>
     </div>
 </section>
